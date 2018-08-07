@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="assets/style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
@@ -10,11 +10,110 @@
 </head>
 
 <body>
+  <div class="wrapper tabled">
+    <div class="stage" id="page1">
+      <div class="middled">
+            <h1>Are you 21??</h1>
+            <button type="button" class="btn btn-primary" id="yes21">Yes</button>
+            <button type="button" class="btn btn-danger" id="no21"><a href="https://howmanydaystill.com/">No</a></button>
+      </div>
+    </div>
+  </div>
 
-    <h1>Are you 21??</h1>
-    <button type="button" class="btn btn-primary"><a href="input.html">Yes</a></button>
-    <button type="button" class="btn btn-danger"><a href="https://howmanydaystill.com/">No</a></button>
+  <div class="wrapper tabled">
+    <div class="stage" id="page2">
+      <div class="middled">
+        <div class="jumbotron">
+          <h2 id="beerNearHere">Beer Near Here</h2>
+        </div>
+        <div class="input-group mb-3" id="submitButton">
+          <input type="text" class="form-control" placeholder="From where do you hail to acquire the ale?" aria-label="From where do you hail to acquire the ale?" aria-describedby="basic-addon2">
+              <span class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="submitLocation">Submit</button>
+              </span>
+        </div>
+      </div>
+    </div>
+  </div>
 
+
+  <div class="wrapper tabled">
+    <div class="stage" id="page3">
+      <div class="middled">
+        <div id= "map"></div>
+        <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhHeDUHfM3yqCOkW6F808Iz_M8ltSVFeU&callback=initMap">
+        </script>
+        <script>
+        function initMap(){
+        var options = {
+            zoom: 8,
+            center:{lat: 40.8075360, lng: -73.9625730}
+            }
+
+            var map = new
+            google.maps.Map(document.getElementById('map'), options);
+        }
+        </script>
+        <style>
+                #map {
+                    height: 400px;
+                    width: 100%;
+                }
+             </style>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper tabled">
+        <div class="stage" id="page4">
+          <div class="middled">
+            <form>
+                <div class="form-group">  <!-- Checkbox Group !-->
+                    <label class="control-label" id="questionPage"></label>
+                    <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="preference" value="yes">
+                        Yes
+                    </label>
+                    </div>
+                    <div class="checkbox">
+                    <label>
+                        <input type="checkbox"  name="preference" value="no">
+                        No
+                    </label>
+                    </div>
+                </div>	
+                
+                <div class="form-group"> <!-- Submit button !-->
+                    <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+                </div>
+            </form>
+          </div>
+        </div>
+  </div>
+
+  <div class="wrapper tabled">
+    <div class="stage" id="page5">
+      <div class="middled">
+            <!--Insert "Run, dont drive, to (insert Brewery here) to check out these personalized beer recommendations-->
+
+            <h2 id="outcomesTitle"></h2>
+            <h4>*These custom beer recommendations should suit your fancy*</h4>
+
+            <ul class="list-group" id="suggestedBeers">
+            <!--populate this list with beers via "li" with class="list-group-item" that come from the API-->
+            <!--make it so that when the beer is clicked a description comes up of the beer with some other info-->
+            </ul>
+
+            <!-- We wanted a picture from the brewery we are recommending as the background-->
+
+      </div>
+    </div>
+  </div>
+    
+  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="assets/app.js"></script>
 </body>
