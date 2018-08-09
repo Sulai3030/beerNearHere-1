@@ -6,7 +6,7 @@ $(document).ready(function(){
         }, 2000);
     });
 
-    $("#submitLocation").click(function() {
+    $("#submitName").click(function() {
         $('html, body').animate({
             scrollTop: $("#page3").offset().top
         }, 2000);
