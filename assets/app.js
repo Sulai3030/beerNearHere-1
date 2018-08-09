@@ -6,19 +6,19 @@ $(document).ready(function(){
         }, 2000);
     });
 
-    $("#submitName").click(function() {
+    $("#submitYourName").click(function() {
         $('html, body').animate({
             scrollTop: $("#page3").offset().top
         }, 2000);
     });
 
-    $("#barChoice").click(function() {
+    $("#nextPage").click(function() {
         $('html, body').animate({
             scrollTop: $("#page4").offset().top
         }, 2000);
     });
 
-    $("#submitQuiz").click(function() {
+    $("#beerPreferences").click(function() {
         $('html, body').animate({
             scrollTop: $("#page5").offset().top
         }, 2000);

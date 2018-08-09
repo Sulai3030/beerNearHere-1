@@ -2,7 +2,17 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: Lato;
-    color: white;
+    color: black !important;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: black;
+}
+
+form {
+    display:flex;
 }
 
 .stage {
@@ -21,6 +31,12 @@ html, body {
 }
  
 #submitButton {
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#beerPreferences {
     display: flex;
     margin-right: 10%;
     margin-left: 10%;
