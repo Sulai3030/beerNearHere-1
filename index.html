@@ -1,12 +1,301 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.dismissButton{background-color:#fff;border:1px solid #dadce0;color:#1a73e8;border-radius:4px;font-family:Roboto,sans-serif;font-size:14px;height:36px;cursor:pointer;padding:0 24px}.dismissButton:hover{background-color:rgba(66,133,244,0.04);border:1px solid #d2e3fc}.dismissButton:focus{background-color:rgba(66,133,244,0.12);border:1px solid #d2e3fc;outline:0}.dismissButton:hover:focus{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd}.dismissButton:active{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd;box-shadow:0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15)}.dismissButton:disabled{background-color:#fff;border:1px solid #f1f3f4;color:#3c4043}
+        </style><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+        </style><link type="text/css" rel="stylesheet" href="./Index_files/css"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+        </style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+    </style>
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+<link rel="stylesheet" type="text/css" href="./Index_files/style.css">
+<link rel="stylesheet" href="./Index_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script type="text/javascript" src="./Index_files/jquery.min.js.download"></script>
+<link rel="stylesheet" href="./Index_files/reset.css">
+<title>Are you 21?</title>
+<style type="text/css">.gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }
+      .gm-style img { max-width: none; }</style>
 </head>
 
 <body>
-<h1>Sup</h1>
-</body>
+  <div class="wrapper tabled">
+    <div class="stage" id="page1">
+      <div class="middled">
+          
+        <div class="cp_embed_wrapper"><iframe id="cp_embed_BPxBrM" src="./Index_files/BPxBrM.html" scrolling="no" frameborder="0" height="265" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" name="CodePen Embed" title="Text animation" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>
 
-</html>
+          
+          <div class="age_header_title" style="color: rgb(241, 228, 215); font-weight: normal; font-size: 27px; text-align:center; margin-bottom:30px;">
+              <span class="langable" data-lang="enter_site">Are you 21 or over?</span>
+          </div>
+
+          <div id="age_header_subtitle" style="color: rgb(241, 228, 215); text-align:center; font-size:18px;margin-bottom:30px;">
+              <span class="langable" data-lang="site_header">Drink responsibly  <i class="fas fa-beer"></i></span>
+          </div>
+
+          <div id="age_horizontal_line">
+              <div class="line" style="height: 2px; background: rgb(241, 199, 97); margin-bottom: 30px;"></div>
+          </div>
+
+          
+        
+          <div id="age_confirm">
+                  <button id="yes21" class="langable" data-lang="enter" style="color: rgb(241, 228, 215);font-weight: bold;background-color: rgb(0, 0, 0);border: 1px solid rgb(241, 199, 97);border-radius: 8px;width: 162px;height: 50px;">Yes</button>
+                  <button id="no21" class="langable" data-lang="enter" style="color: rgb(241, 228, 215);font-weight: bold;background-color: rgb(0, 0, 0);border: 1px solid rgb(241, 199, 97);border-radius: 8px; width:162px; height:50px;"><a href="https://howmanydaystill.com/">No</a></button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper tabled">
+    <div class="stage" id="page2">
+      <div class="middled">
+        <div class="jumbotron">
+          <h2 id="beerNearHere">Beer Near Here</h2>
+        </div>
+        <div class="input-group mb-3" id="submitButton">
+          <input type="text" class="form-control" placeholder="What's your name?" aria-label="What's your name?" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button id="submitYourName" class="btn btn-outline-secondary" type="button">Submit</button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="wrapper tabled">
+    <div class="stage" id="page3">
+      <div class="middled">
+        <div class="pac-card" id="pac-card">
+          <div id="pac-container">
+            <input id="pac-input" type="text" placeholder="Enter a location">
+          </div>
+        </div>
+          <div id="map"></div>
+            <div id="infowindow-content">
+              <img src="" width="16" height="16" id="place-icon">
+                <span id="place-name"  class="title"></span><br>
+                <span id="place-address"></span>
+            </div>
+        <script>
+        var map;
+        var service;
+        var infowindow;
+        //var place;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 40.7128, lng: -74.0060},
+            zoom: 6
+            });
+
+            // FIND OUT HOW TO GET THE PLACE VARIABLE FROM THE FUNCTION DOWN THERE
+            // get lat
+
+            var nyc = new google.maps.LatLng(40.7128, 74.0060);
+            
+            var card = document.getElementById('pac-card');
+            var input = document.getElementById('pac-input');
+            var types = document.getElementById('type-selector');
+
+            map.controls[google.maps.ControlPosition.TOP_CENTER].push(card);
+
+            var autocomplete = new google.maps.places.Autocomplete(input);
+
+            // Bind the map's bounds (viewport) property to the autocomplete object,
+            // so that the autocomplete requests use the current map bounds for the
+            // bounds option in the request.
+            autocomplete.bindTo('bounds', map);
+
+            // Set the data fields to return when the user selects a place.
+            autocomplete.setFields(
+                ['address_components', 'geometry', 'icon', 'name']);
+
+            var infowindow = new google.maps.InfoWindow();
+            var infowindowContent = document.getElementById('infowindow-content');
+            infowindow.setContent(infowindowContent);
+
+            autocomplete.addListener('place_changed', function() {
+            place = autocomplete.getPlace();
+            var lat = place.geometry.location.lat();
+            var lng = place.geometry.location.lng();
+            var latlng = new google.maps.LatLng(lat, lng);
+            // console.log(latlng);
+            // console.log('place: ', place);
+            // console.log('lat: ', place.geometry.location.lat())
+            // console.log('lng: ', place.geometry.location.lng())
+
+            var request = {
+              location: latlng,
+              radius: '5000',
+              type: ['bar']
+              };
+
+            infowindow.close();
+            // place = autocomplete.getPlace();
+
+            if (!place.geometry) {
+                // User entered the name of a Place that was not suggested and
+                // pressed the Enter key, or the Place Details request failed.
+                window.alert("No details available for input: '" + place.name + "'");
+                return;
+            }
+
+            // If the place has a geometry, then present it on a map.
+            if (place.geometry.viewport) {
+                map.fitBounds(place.geometry.viewport);
+            } else {
+                map.setCenter(place.geometry.location);
+                map.setZoom(10);  //
+            }
+
+            var address = '';
+            if (place.address_components) {
+                address = [
+                (place.address_components[0] && place.address_components[0].short_name || ''),
+                (place.address_components[1] && place.address_components[1].short_name || ''),
+                (place.address_components[2] && place.address_components[2].short_name || '')
+                ].join(' ');
+            }
+
+            infowindowContent.children['place-icon'].src = place.icon;
+            infowindowContent.children['place-name'].textContent = place.name;
+            infowindowContent.children['place-address'].textContent = address;
+            infowindow.open(map);
+            
+            service = new google.maps.places.PlacesService(map);
+            service.nearbySearch(request, callback);
+            });
+        }
+        
+        function callback(results, status) {
+          if (status == google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+            //   var place = results[i];
+              createMarker(results[i]);
+              
+            }
+          }
+        }
+
+        function createMarker(place) {
+          var image = "assets/beericon.png"
+          var marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location,
+            icon: image
+          });
+
+          marker.addListener('click', function() {
+            infowindow = new google.maps.InfoWindow();  
+            var request = {
+                reference: place.reference
+            };
+
+            service.getDetails(request, function(details, status) {
+
+              infowindow.setContent([
+                details.name,
+                details.formatted_address,
+                details.website,
+                details.formatted_phone_number].join("<br /> <br />"));
+              infowindow.open(map, marker);
+            });
+        });
+        
+        }
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhLu5Qxy7CuA7vHpkYql2H8-okAKKnxso&libraries=places&callback=initMap"
+        async defer></script>
+        <style>
+                #map {
+                    height: 400px;
+                    width: 100%;
+                }
+        </style>
+
+       <p id="barChosen">Know where your headed? Click below to find out more about your favorite beers!</p>
+       <button id="nextPage" class="btn btn-primary">Continue</button>
+        
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper tabled">
+    <div class="stage" id="page4">
+      <div class="middled">
+        <div class="input-group mb-3" id="beerPreferences">
+          <input type="text" class="form-control" id="beerWords" placeholder="Say a couple words about your favorite beer" aria-label="Say a couple words about your favorite beer" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button id="beerPreferences" class="btn btn-outline-secondary" type="button">Submit</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper tabled">
+    <div class="stage" id="page5">
+      <div class="middled">
+        <script>
+            function buildQueryURL() {
+        // queryURL is the url we'll use to query the API
+        var queryURL = "https://api.untappd.com/v4/search/beer?";
+
+        // Begin building an object to contain our API call's query parameters
+        // Set the API key
+        var queryParams = { "api-key": "B409940861087920BF65B1AA6761049570EC50C1",
+                            "api-secret": "8A54A1E3019AF4BDF38F77B787BB54F06C56F14E" 
+                        };
+
+        // Grab text the user typed into the search input, add to the queryParams object
+        queryParams.q = $("#beerWords")
+            .val()
+            .trim();
+
+        // Logging the URL so we have access to it for troubleshooting the inputs
+        console.log("---------------\nURL: " + queryURL + "\n---------------");
+        console.log(queryURL + $.param(queryParams));
+        return queryURL + $.param(queryParams);
+        }
+
+        // Make the AJAX request to the API - GETs the JSON data at the queryURL.
+        // The data then gets passed as an argument to the updatePage function
+        // $.ajax({
+        //     url: queryURL,
+        //     method: "GET"
+        // }).then(updatePage);
+        // });
+
+
+
+        </script>
+            <!--Insert "Run, dont drive, to (insert Brewery here) to check out these personalized beer recommendations-->
+
+            <h2 id="outcomesTitle"></h2>
+            <h4>*These custom beer recommendations should suit your fancy*</h4>
+
+            <ul class="list-group" id="suggestedBeers">
+            <!--populate this list with beers via "li" with class="list-group-item" that come from the API-->
+            <!--make it so that when the beer is clicked a description comes up of the beer with some other info-->
+            </ul>
+
+            <!-- We wanted a picture from the brewery we are recommending as the background-->
+
+      </div>
+    </div>
+  </div>
+    
+  
+<script src="./Index_files/jquery.min.js.download"></script>
+<script src="./Index_files/app.js.download"></script>
+
+</body></html>

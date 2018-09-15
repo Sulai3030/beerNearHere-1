@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Lato;
+    color: white;
+}
+
+.stage {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wrapper {
+    display: table;
+    height: 100%; width: 100%;
+}
+
+.tabled, .middled {
+  text-align: center;
+  margin: 0 auto;
+}
+ 
+#submitButton {
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#beerNearHere {
+    font-family: 'Norican', cursive;
+}
+
+#page1 {
+    background-color: black;
+}
+
+#page2 {
+    background-color: azure;
+}
+
+#page3 {
+    background-color: blueviolet;
+}
+
+#page4 {
+    background-color: papayawhip;
+}
+
+#page5 {
+    background-color: blue;
+}
+a{
+    color:white;
+}
